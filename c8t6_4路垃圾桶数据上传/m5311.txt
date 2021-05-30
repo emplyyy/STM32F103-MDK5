@@ -1,0 +1,15 @@
+AT OK
+AT+CMSYSCTRL=0,2
+AT+SM=LOCK_FOREVER
+AT+MQTTCFG="119.23.49.96",1883,"Clientabc","1800","1800","11111","22222",1
+AT+MQTTCFG=119.23.49.96,1883,Clientabc,300,300,admin,admin,1
+AT+MQTTOPEN=1,1,0
+AT+MQTTPUB="/TEST",1,0,0,0,"MQTT TEST"
+
+{"deviceID":"","method":"","":"","":"","":"","timestamp":""}
+
+FSIMG(2097152,0,0,160,128,0);
+DC24(30,5,'99',18);
+DC24(112,5,'99',18);
+DC24(112,72,'99',18);
+DC24(30,72,'99',18);
